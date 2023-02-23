@@ -26,26 +26,92 @@ img{
     padding: 0 0 33px;
 }
 .img_wrap{
+    position: relative;
     display: flex;
-    overflow: hidden;
+    height: 600px;
 }
 .img_wrap li{
-    position: relative;
+    position: absolute;
     width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 .img_wrap li img{
     position: relative;
+    display: block;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 1920px;
     min-width: 1200px;
+    max-width: 1920px;
 }
 .mini_wrap{
     text-align: center;
+    margin-top: 10px;
 }
 .thumbnail{
-    width: 0;
     margin: 0 auto;
     display: flex;
+    gap: 0 10px;
+    justify-content: center;
+}
+.hgroup{
+    padding: 0 0 30px;
+    text-align: center;
+}
+.hgroup h2{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    border-bottom: 1px solid #000;
+}
+.campaign{
+    margin: 0 0 60px;
+    padding: 60px 0;
+}
+.slide_wrap{
+    position: relative;
+    width: 1476px;
+    margin: 0 auto;
+}
+.slide{
+    width: 3400%;
+    overflow: hidden;
+    gap: 0 30px;
+}
+.slide::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.slide li{
+    width: 369px;
+    float: left;
+    display: block;
+}
+.slidebx{
+    position: relative;
+    display: block;
+    margin: 0 10px;
+}
+.slidebx img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.slidebx a{
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.video_wrap{
+    margin-bottom: 120px;
+    text-align: center;
 }
