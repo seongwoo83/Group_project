@@ -40,12 +40,17 @@ img{
 .img_wrap li img{
     position: relative;
     display: block;
+    opacity: 0;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 1920px;
     min-width: 1200px;
     max-width: 1920px;
+    transition: opacity .5s ease-in-out;
+}
+.img_wrap li img.on{
+    opacity: 1;
 }
 .mini_wrap{
     text-align: center;
@@ -69,6 +74,7 @@ img{
     border-bottom: 1px solid #000;
 }
 .campaign{
+    position: relative;
     margin: 0 0 60px;
     padding: 60px 0;
 }
@@ -76,11 +82,13 @@ img{
     position: relative;
     width: 1476px;
     margin: 0 auto;
+    overflow: hidden;
 }
 .slide{
-    width: 3400%;
+    position: relative;
+    width: max-content;
     overflow: hidden;
-    gap: 0 30px;
+    transition: left .4s ease-in-out;
 }
 .slide::after{
     content: '';
@@ -103,12 +111,33 @@ img{
     height: auto;
 }
 .slidebx a{
+    opacity: 0;
     position: absolute;
     display: block;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+}
+.btnbx{
+    position: absolute;
+    width: 1600px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btnbx a{
+    display: inline-block;
+    width: 19px;
+    height: 66px;
+}
+.prev{
+    background: url(../IMG/btn_prev.png);
+    float: left;
+}
+.next{
+    background: url(../IMG/btn_next.png);
+    float: right;
 }
 
 .video_wrap{
