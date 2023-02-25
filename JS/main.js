@@ -36,9 +36,12 @@ window.addEventListener("DOMContentLoaded", ()=>{
         }
     })
 
+    let prot = 0;
     function goSlide(seq){
+        if(prot) return;
+        prot++;
         /* 슬라이드 박스 */
-    let slideList = document.querySelectorAll(".slide li");
+        let slideList = document.querySelectorAll(".slide li");
         if(seq===1){
             slideBx.style.transition = "left .4s ease-in-out"
             slideBx.style.left = "-369px"
@@ -56,16 +59,26 @@ window.addEventListener("DOMContentLoaded", ()=>{
                 slideBx.style.transition = "left .4s ease-in-out";
             }, 10);
         }
+        setTimeout(() => {
+            prot = 0;
+        }, 400);
     }
 
     /* 이미지에 마우스 올렸을 때 설명 이미지 등장 */
     /* 이미지 변수 */
-    const slideImg = document.querySelectorAll(".slidebx>img")
+    const slideImg = document.querySelectorAll(".slidebx")
     console.log('slideImg: ', slideImg);
     slideImg.forEach(ele=>{
+        let hiddenImg = ele.querySelector("a");
         ele.addEventListener("mouseenter", ()=>{
-            ele.nextElementSibling.querySelector("a").style.opacity = "1";
+            hiddenImg.style.opacity = "1";
         })
+        ele.addEventListener("mouseleave", ()=>{
+            hiddenImg.style.opacity = "0";
+        })
+        hiddenImg.onclick = (e)=>{
+            e.preventDefault();
+        }
     })
 
 
