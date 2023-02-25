@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", ()=>{
     /* 메인 이미지 */
-    const wrapImg = document.querySelectorAll(".img_wrap li img");
+    const wrapImg = document.querySelectorAll(".img_wrap li img:first-child");
     /* 썸네일 이미지 */
     const miniImg = document.querySelectorAll(".thumbnail img");
     

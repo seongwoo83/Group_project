@@ -37,7 +37,7 @@ img{
     top: 0;
     left: 0;
 }
-.img_wrap li img{
+.img_wrap li img:first-child{
     position: relative;
     display: block;
     opacity: 0;
@@ -48,6 +48,9 @@ img{
     min-width: 1200px;
     max-width: 1920px;
     transition: opacity .5s ease-in-out;
+}
+.img_wrap li img:last-child{
+    display: none;
 }
 .img_wrap li img.on{
     opacity: 1;
