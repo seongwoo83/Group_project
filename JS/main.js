@@ -11,6 +11,10 @@ window.addEventListener("DOMContentLoaded", ()=>{
             wrapImg[idx].classList.add("on");
         }
     })
+    /* 이미지 전환 변수 */
+    let imgSeq = 0;
+    
+
     function initMenu(){
         wrapImg.forEach((ele)=>{
             ele.classList.remove("on");
