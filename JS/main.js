@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
     /* 중간 박스 슬라이드 효과 */
     /* 슬라이드 버튼 */
-    const slideBtn = document.querySelectorAll(".btnbx a");
+    const slideBtn = document.querySelectorAll(".campaign>a");
     /* 슬라이드 전체 박스 */
     const slideBx = document.querySelector(".slide");
     

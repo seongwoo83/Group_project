@@ -5,4 +5,7 @@
         width: auto;
         min-width: auto;
     }
+    .mini_wrap{
+        display: none;
+    }
 }

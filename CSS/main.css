@@ -32,6 +32,7 @@ img{
 }
 .img_wrap li{
     position: absolute;
+    display: block;
     width: 100%;
     height: 100%;
     top: 0;
@@ -75,6 +76,9 @@ img{
 }
 .campaign{
     position: relative;
+    width: 1600px;
+    left: 50%;
+    transform: translateX(-50%);
     margin: 0 0 60px;
     padding: 60px 0;
 }
@@ -118,26 +122,22 @@ img{
     left: 0;
     right: 0;
 }
-.btnbx{
+.campaign>a{
     position: absolute;
-    z-index: -1;
-    width: 1600px;
     top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.btnbx a{
     display: inline-block;
-    width: 19px;
-    height: 66px;
 }
 .prev{
     background: url(../IMG/btn_prev.png);
-    float: left;
+    left: 0;
+    width: 19px;
+    height: 66px;
 }
 .next{
     background: url(../IMG/btn_next.png);
-    float: right;
+    right: 0;
+    width: 19px;
+    height: 66px;
 }
 
 .video_wrap{
