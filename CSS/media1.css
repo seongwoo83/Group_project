@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 767px) {
+    .img_wrap li img{
+        width: auto;
+        min-width: auto;
+    }
+    .mini_wrap{
+        display: none;
+    }
+}

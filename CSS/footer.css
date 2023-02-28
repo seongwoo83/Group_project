@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 html,body,h1,h2,h3,h4,h5,h6,p, section,div, header, main, footer, address,dl,dt,dd{
     margin: 0;
     padding: 0;
@@ -20,22 +19,23 @@ ol,ul,li,dl,dd,dt{
 a, button{
     text-decoration: none;
 }
-
-
+.main{
+    height: 100vh;
+}
 #footer{
     padding: 0;
     background: #ededed;
 }
-.footer_site{
+.site_area{
     background: #ddd;
     padding: 10px 0;
 }
-.site_open{
+.footer_site{
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
-    text-align: right;  
+    text-align: right;
 }
 .select_txt{
     position: relative;
@@ -58,6 +58,9 @@ a, button{
     border-left: 6px solid #5f5f5f;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
+}
+.btn_txt{
+    display: none;
 }
 .site_list{
     display: inline-block;
@@ -142,7 +145,7 @@ a, button{
     top: 40px;
     left: 50%;
     width: 133px;
-    margin: 0 0 0 -600px;
+    margin: 0 0 0 -50%;
 } h1 i{
     display: block;
     height: 30px;
