@@ -139,14 +139,16 @@ a, button{
     font-size: 14px;
     line-height: 22px;
     padding: 0 0 0 160px;
-}h1{
+}
+h1{
     position: absolute;
     text-align: center;
     top: 40px;
     left: 50%;
     width: 133px;
     margin: 0 0 0 -50%;
-} h1 i{
+} 
+h1 i{
     display: block;
     height: 30px;
     text-indent: -9999px;

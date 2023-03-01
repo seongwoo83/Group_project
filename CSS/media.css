@@ -65,7 +65,6 @@
     .site_list li{
         display: block;
         text-align: left;
-        white-space: nowrap;
     }
     .site_list li+li a::after{
         display: none;
@@ -96,8 +95,7 @@
     .call_time{
         display: none;
     }
-    .footer_info p{
-        color: #5f5f5f;
+    .footer_wrap p{
         font-size: 10px;
         line-height: 16px;
         padding: 0;
