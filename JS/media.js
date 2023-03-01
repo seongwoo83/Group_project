@@ -1,6 +1,5 @@
 window.addEventListener("DOMContentLoaded", ()=>{
     const mMainImg = document.querySelectorAll(".img_wrap>li img");
-    console.log(mMainImg);
     window.addEventListener("resize", ()=>{
         let pageWidth = window.innerWidth;
         if(pageWidth<=767){
@@ -15,4 +14,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
             })
         }
     })
+    
+
 })
