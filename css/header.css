@@ -42,8 +42,15 @@ line-height: 29px;
 }
 
 
+.headerForPC{
+  border-bottom: 1px solid #aaa;
+}
+.headerForPC h1{
+  top: 5px;
+}
 
 .menuWrapper{
+    height: 135px;
     position: relative;
 
     width:1200px;
@@ -232,7 +239,7 @@ line-height: 29px;
   width: 30px;
   height: 30px;
   margin: -15px 0 0;
-  background: url(./images/images-header/mb_header_srch_close.png) no-repeat 50% 50%;
+  background: url(../images/images-header/mb_header_srch_close.png) no-repeat 50% 50%;
   background-size: 22px;
   border: none;
   cursor: pointer;
@@ -376,7 +383,9 @@ line-height: 29px;
       display: flex;
       justify-content: center;
       align-items: center;
-
+      margin: auto;
+      top: 20px;
+      transform: translateX(-50%);
   }
 
   .menuWrapperForMobile h1 a img{
