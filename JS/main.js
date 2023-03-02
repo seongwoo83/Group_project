@@ -141,17 +141,18 @@ window.addEventListener("DOMContentLoaded", ()=>{
         }
     })
 
+    /* 미드 슬라이드 박스 */
+    const midWrap = document.querySelector(".mid_wrap");
+    /* 탑 이미지 박스 */
+    const topBx = document.querySelector(".top");
 
-    const midWrap = document.querySelector(".mid_wrap")
     /** 윈도우 사이즈 줄이는 이벤트 */
     window.addEventListener("resize",()=>{
-        /** 윈도우 사이즈 줄어들면서 메인 이미지 크기 변할때 중간 슬라이드 박스 위치조정 */
-        midWrap.style.top = (wrapImg[0].clientHeight - 700) + "px";
-        
         
         winWid = window.innerWidth;
         /** 윈도우 사이즈 줄어들고 슬라이드 버튼 눌렀을 때 이동하는 이벤트 */
         if(winWid >= 768){
+            topBx.style.paddingBottom = "0";
             slideBtn.forEach((ele,idx)=>{
                 ele.onclick = (e)=>{
                     goSlide(idx);
@@ -159,6 +160,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
                 }
             })
         }else{
+            topBx.style.paddingBottom = (wrapImg[0].clientHeight - 700) + "px";
             slideBtn.forEach((ele,idx)=>{
                 ele.onclick = (e)=>{
                     goSlideMed(idx);
