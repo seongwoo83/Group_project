@@ -128,13 +128,13 @@ img{
     display: inline-block;
 }
 .prev{
-    background: url(../IMG/btn_prev.png);
+    background: url(../images/images-main/btn_prev.png);
     left: 0;
     width: 19px;
     height: 66px;
 }
 .next{
-    background: url(../IMG/btn_next.png);
+    background: url(../images/images-main/btn_next.png);
     right: 0;
     width: 19px;
     height: 66px;
@@ -186,6 +186,6 @@ img{
     height: 45px;
     display: block;
     text-indent: -9999px;
-    background: url(../IMG/closeBtn.png) no-repeat 50% 50%;
+    background: url(../images/images-main/closeBtn.png) no-repeat 50% 50%;
     cursor: pointer;
 }
