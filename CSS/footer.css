@@ -8,7 +8,6 @@ html,body,h1,h2,h3,h4,h5,h6,p, section,div, header, main, footer, address,dl,dt,
 
 body{
     font-size: 12px;
-    line-height: 1.6666em;
     color: #5c5c5c;
     font-family: "Nanum Gothic";
     letter-spacing: -0.05em;

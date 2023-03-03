@@ -1,0 +1,26 @@
+@charset "UTF-8";
+main{
+    text-align: center;
+    position: relative;
+}
+.main_wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+.tit_wrap{
+    position: relative;
+    padding-top: 120px;
+}
+.tit_wrap h2{
+    position: absolute;
+    left: 0;
+    font-size: 40px;
+}
+.tit_wrap h5{
+    position: absolute;
+    left: 0;
+    top: 165px;
+}
+table{
+    margin: 0 auto;
+}
