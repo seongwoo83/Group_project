@@ -86,6 +86,9 @@ main{
     text-align: left;
     font-weight: 600;
 }
+.page{
+    margin-bottom: 150px;
+}
 .page a{
     display: inline-block;
     font-size: 13px;
