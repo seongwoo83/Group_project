@@ -257,7 +257,6 @@ line-height: 29px;
     transform: translateX(-50%);
     width: 95vw;
     padding-bottom: 30px;
- 
   }
 
   .hiddenMenuWrapper ul li{
@@ -337,6 +336,7 @@ line-height: 29px;
 
   .showMenu{
     display: flex;
+    z-index: 999;
     
   }
 
