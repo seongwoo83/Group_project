@@ -23,6 +23,7 @@ html, body {
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    transition: .3s ease-in-out;
 }
 
 #click span {
@@ -32,6 +33,11 @@ html, body {
     color: #fff;
     border-radius: 5px;
     text-shadow: -4px 4px 4px #000;
+    transition: .3s ease-in-out;
+}
+#click:hover span{
+    color: rgb(255, 139, 216);
+    transform: scale(1.2);
 }
 
 #click img {
