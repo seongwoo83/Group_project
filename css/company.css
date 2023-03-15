@@ -76,18 +76,6 @@ h2 {
     height: 100%;
     text-align: center;
 }
-body {
-    background: #fff;
-    min-width: 320px;
-    -webkit-text-size-adjust: none;
-    -webkit-text-stroke-width: 0.1px;
-    font-family: 'Nanum Gothic','Droid Sans','Apple-Gothic',sans-serif;
-    font-size: 12px;
-    line-height: 1.66666em;
-    color: #5c5c5c;
-    letter-spacing: -0.05em;
-    -webkit-letter-spacing: -0.05em;
-}
 
 img {
   border: 0;
